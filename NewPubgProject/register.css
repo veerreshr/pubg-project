@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: all ease;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error {
+    width: 92%;
+    margin: 0px auto;
+    padding: 10px;
+    border: 1px solid #a94442;
+    color: #a94442;
+    background: #f2dede;
+    border-radius: 5px;
+    text-align: left;
+    font-weight: bolder;
+}
+
+input {
+    position: relative;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: rgb(241, 241, 241, 0.4);
+    color: #000;
+    position: relative;
+    padding: 30px;
+    margin-top: 10px;
+}
+
+#message {
+    display: none;
+    background-color: rgb(241, 241, 241, 0.3);
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+    width: 60vw;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+.valid {
+    color: green;
+}
+
+.valid::before {
+    position: relative;
+    left: -35px;
+    content: "\2714";
+}
+
+.invalid {
+    color: red;
+}
+
+.invalid::before {
+    position: relative;
+    left: -35px;
+    content: "\2716";
+}
+
+#left {
+    position: absolute;
+    top: 1vh;
+    left: 5vw;
+    width: 30vw;
+    height: 40vh;
+}
+
+#right {
+    top: 1vh;
+    right: 5vw;
+    width: 30vw;
+    height: 40vh;
+    position: absolute;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+a {
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+.content {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow: hidden;
+}
+
+.button-left {
+    position: fixed;
+    padding: 10px;
+    left: 0;
+    top: 50%;
+}
+
+.button-right {
+    position: fixed;
+    padding: 10px;
+    right: 0;
+    top: 50%;
+}
+
+label {
+    font-weight: bolder;
+}
+
+.slides:nth-child(6) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img1.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(8) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img2.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(3) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img3.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(4) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img4.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(5) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img5.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(2) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img6.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(7) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img7.jpg");
+    background-size: cover;
+}
+
+.slides:nth-child(1) {
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-origin: border-box;
+    background-image: url("slides/img8.jpg");
+    background-size: cover;
+}
+
+
+/*
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .3
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .3
+        }
+        to {
+            opacity: 1
+        }
+    } */
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 300px;
+        padding: 20px;
+    }
+    .slides {
+        background-size: contain;
+        top: 0;
+    }
+}
